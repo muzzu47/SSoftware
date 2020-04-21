@@ -18,6 +18,7 @@ const muzzu = () => {
 // muzzu();
 // muzzu();
 // muzzu()();
+//this is simple;
 
 let z = muzzu()();
 // console.log(z);
