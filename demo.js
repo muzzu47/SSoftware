@@ -22,6 +22,7 @@ const muzzu = () => {
 
 let z = muzzu()();
 // console.log(z);
+// z is instantiated;
 let f = () => {
     let g = "string g";
     let k = z + ' ' + g;
