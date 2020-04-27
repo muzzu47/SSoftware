@@ -27,7 +27,7 @@ let f = () => {
     let g = "string g";
     let k = z + ' ' + g;
 //     console.log(k);
-    console.log("this shall be shown");
+//     console.log("this shall be shown");
 }
 
 f();
