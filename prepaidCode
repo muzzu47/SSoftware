@@ -1,0 +1,56 @@
+
+
+let pr = "pre paid".split('');
+let po = "post paid".split('');
+
+let input = "prepaid";
+let fi = input.toLowerCase().split('');
+// console.log(fi.length);
+let data = '';
+let result1 = () => {
+    for (i = 0; i < fi.length; i++) {
+        if(fi[i] != pr[i] && fi[i] != po[i]) {
+            console.log("first case",i)
+            data = 'nothing'
+            return;
+            continue;
+        }
+        else if(fi[i] == pr[i] && fi[i] == po[i]) {
+            console.log("sec case",i)
+            data = 'both'
+            continue;
+        }
+        else if(fi[i] == pr[i] && fi[i] != po[i]){
+        console.log("i m here", i);
+        data = 'prepaid';
+        continue;
+        }
+        else if(fi[i] != pr[i] && fi[i] == po[i]){
+            console.log("i m here", i);
+            data = 'postpaid';
+            break;
+            }
+        
+    }
+}
+result1();
+console.log(data);
+
+// let data2 = '';
+// let result2 = () => {
+//     for (i = 1; i < fi.length; i++) {
+//         if(fi[i] == po[i] ) data2 = 'true';
+//         else data2 = 'false';
+//     }
+// }
+console.log(data2);
+
+// let result = () => {
+// if(data1) return 'prepaid';
+// else if (data2) return 'postpaid';
+// else if (!data1 && !data2) return 'nothing';
+// else return 'both';
+// }
+// console.log(result());
+
+
